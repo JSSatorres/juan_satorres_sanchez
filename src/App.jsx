@@ -4,8 +4,6 @@ import { Router } from "./Router";
 // import { motion } from 'framer-motion'
 import './assets/styles/App.scss'
 
-
-
 function App() {
   return <Router />;
 }
