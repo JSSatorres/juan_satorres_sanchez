@@ -7,6 +7,6 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color:#FFFBF5;
+  background-color:#ffffff;
   @apply text-black;
 }
