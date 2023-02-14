@@ -3,7 +3,7 @@ import linkedin from '../../assets/linkedin.png'
 import gitHub from '../../assets/gitHub.png'
 
 const SocialMediaIcons = () => (
-  <div className='flex justify-center md:justify-start my-10 gap-7'>
+  <div className='flex justify-center md:justify-start my-5 gap-7'>
     <a
       className='hover:opacity-50 transition duration-500'
       href='https://www.linkedin.com/in/juan-s%C3%A1nchez-satorres/'
