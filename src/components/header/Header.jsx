@@ -18,10 +18,6 @@ const Header = () => {
   const headerHight = isTopOfPage ? 'h-14 text-lg' : 'h-8 text-base';
   const isDesktop = useMediaQuery('(min-width: 768px)');
   const [isActive, setActive] = useState(0);
-  // const navbarBackground = isTopOfPage ? '' : 'bg-darker';
-  // const movilClass = isDesktop ? '' : 'z-20 w-full fixed top-0 py-2'
-  // const desktopClass = isDesktop ? 'z-20 w-full sticky top-0 mt-6 py-4' : ''
-  // const navbarColorText = isTopOfPage ? 'text-black' : '';
 
   const toggleClass = (index) => {
     setActive(index);
@@ -29,7 +25,7 @@ const Header = () => {
   return (
     <header className='w-full  bg-primary fixed top-0 z-50 '>
       {isDesktop ? (
-        <ul className={`flex ${headerHight} justify-center flex-wrap gap-20 items-center`}>
+        <ul className={`flex ${headerHight}  flex-wrap gap-20 items-center mx-auto w-4/6 flex justify-between`}>
           {links.map((link, index) => (
             <li
               className='font-bold  text-contrast1  hover:text-hovertext active:text-activetext transition duration-500'
