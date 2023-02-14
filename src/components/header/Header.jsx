@@ -15,55 +15,61 @@ const links = [
 const Header = () => {
   const { isTopOfPage } = usePosition()
   const [isMenuToggled, setIsMenuToggled] = useState(false)
-  const navbarBackground = isTopOfPage ? '' : 'bg-darker';
-  const navbarColorText = isTopOfPage ? 'text-black' : '';
+  const headerHight = isTopOfPage ? 'h-14 text-lg' : 'h-8 text-base';
   const isDesktop = useMediaQuery('(min-width: 768px)');
-  const movilClass = isDesktop ? '' : 'z-20 w-full fixed top-0 py-2'
-  const desktopClass = isDesktop ? 'z-20 w-full sticky top-0 mt-6 py-4' : ''
+  const [isActive, setActive] = useState(0);
+  // const navbarBackground = isTopOfPage ? '' : 'bg-darker';
+  // const movilClass = isDesktop ? '' : 'z-20 w-full fixed top-0 py-2'
+  // const desktopClass = isDesktop ? 'z-20 w-full sticky top-0 mt-6 py-4' : ''
+  // const navbarColorText = isTopOfPage ? 'text-black' : '';
 
+  const toggleClass = (index) => {
+    setActive(index);
+  };
   return (
-    <header className={`${navbarBackground} ${desktopClass}${movilClass}`}>
-      <nav className='flex items-center justify-between mx-auto w-5/6'>
-        {/* DESKTOP NAV */}
-        {isDesktop ? (
-          <div className='flex justify-between gap-16 font-opensans text-sm font-semibold'>
-            <ul className='flex justify-evenly flex-wrap  gap-8'>
-              {links.map((link) => (
-                <li className={`${navbarColorText} font-bold text-white hover:text-indigo transition duration-500`} key={link.name}>
-                  <Link to={link.url}>{ link.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : (
-          <button
-            type='button'
-            className='rounded-full bg-red p-2'
-            onClick={() => setIsMenuToggled(!isMenuToggled)}
-          >
-            <img alt='menu-icon' src={openMenuIcon} />
-          </button>
-        )}
-        {/* MOBILE MENU POPUP */}
-        {!isDesktop && isMenuToggled && (
-        <div className='fixed right-0 bottom-0 h-full bg-blue w-[300px]'>
-          {/* CLOSE ICON */}
-          <div className='flex justify-end p-12'>
+    <header className='w-full  bg-primary fixed top-0 z-50 '>
+      {isDesktop ? (
+        <ul className={`flex ${headerHight} justify-center flex-wrap gap-20 items-center`}>
+          {links.map((link, index) => (
+            <li
+              className='font-bold  text-contrast1  hover:text-hovertext active:text-activetext transition duration-500'
+              key={link.name}
+            >
+              <Link
+                className={isActive === index ? 'text-activetext transition duration-500' : ''}
+                onClick={() => toggleClass(index)}
+                to={link.url}
+              >
+                { link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <button
+          type='button'
+          className={`w-full flex ${headerHight} items-center justify-end`}
+          onClick={() => setIsMenuToggled(!isMenuToggled)}
+        >
+          <img alt='menu-icon' src={openMenuIcon} className='h-8 mr-3' />
+        </button>
+      )}
+      {!isDesktop && isMenuToggled && (
+        <div className='fixed right-0 bottom-0 h-full bg-deep-blue w-[300px]'>
+          <div className='flex justify-start p-12'>
             <button type='button' onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <img alt='close-icon' src={closeNenuIcon} />
             </button>
           </div>
-          {/* MENU ITEMS */}
           <ul className='flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue'>
             {links.map((link) => (
-              <li className='font-bold text-white hover:text-purple transition duration-500`' key={link.name}>
+              <li className='font-bold text-contrast1 ' key={link.name}>
                 <Link to={link.url}>{ link.name}</Link>
               </li>
             ))}
           </ul>
         </div>
-        )}
-      </nav>
+      )}
     </header>
   )
 }
