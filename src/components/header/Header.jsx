@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import usePosition from '../../hooks/usePostion'
 import useMediaQuery from '../../hooks/useMediaQuery'
-import openMenuIcon from '../../assets/menu-icon.svg'
-import closeNenuIcon from '../../assets/close-icon.svg'
+import openMenuIcon from '../../assets/icons/menu-icon.svg'
+import closeNenuIcon from '../../assets/icons/close-icon.svg'
 
 const links = [
   { name: 'Home', url: '/' },
