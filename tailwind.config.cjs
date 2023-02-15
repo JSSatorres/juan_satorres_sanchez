@@ -10,12 +10,15 @@ module.exports = {
         // azul oscuro
         secondary: '#170B33',
         // blanco texto
-        whiter: '#FFFFFF',
-        // blanco texto
+        contrast1: '#FFFFFF',
+        // negro texto
+        contrast2: '#000000',
+        // amarillo texto hover
         hovertext: '#ECCD6A',
-        // blanco texto
+        // amarillo texto seleccionado
         activetext: '#E5BE01',
-        'deep-blue': '#170B33',
+        // azul fondo menu movil
+        'deep-blue': '#000026',
         blue: '#010026',
         red: '#27496D',
         yellow: '#FDCC49',
