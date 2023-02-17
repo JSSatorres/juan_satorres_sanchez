@@ -1,7 +1,7 @@
-import vocces from '../../assets/vocces.png'
-import assembler from '../../assets/assembler.png'
-import stulz from '../../assets/stulz.png'
-import tecnesis from '../../assets/tecnesis.png'
+import vocces from '../../assets/images/vocces.png'
+import assembler from '../../assets/images/assembler.png'
+import stulz from '../../assets/images/stulz.png'
+import tecnesis from '../../assets/images/tecnesis.png'
 
 const dataAboutMe = [
   {
