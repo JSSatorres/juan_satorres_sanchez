@@ -9,7 +9,7 @@ import pict from '../../assets/icons/undraw_product_iteration_kjok.svg'
 const MySkills = () => (
   <section id='skills' className='pt-10 pb-24'>
     {/* HEADER AND IMAGE SECTION */}
-    <div className='md:flex md:justify-between md:gap-16 mt-32 mb-10 w-full text-center'>
+    <div className='md:flex md:justify-between md:gap-16 mt-32 mb-10 w-full '>
       <motion.div
         className='w-full'
         initial='hidden'
