@@ -1,6 +1,6 @@
 import React from 'react'
-import linkedin from '../../assets/linkedin.png'
-import gitHub from '../../assets/gitHub.png'
+import linkedin from '../../assets/icons/linkedin.png'
+import gitHub from '../../assets/icons/gitHub.png'
 
 const SocialMediaIcons = () => (
   <div className='flex justify-center md:justify-start my-5 gap-7'>
