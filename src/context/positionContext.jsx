@@ -6,13 +6,13 @@ export const positionContext = createContext()
 
 function PositionProvider({ children }) {
   const [isTopOfPage, setIsTopOfPage] = useState(true)
-  const [selectedPage, setSelectedPage] = useState('home')
+  const [selectedPage, setSelectedPage] = useState('description')
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
-        setSelectedPage('home');
+        setSelectedPage('description');
       }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
@@ -20,15 +20,18 @@ function PositionProvider({ children }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSelectedPage = (value) => {
+  const changeSelectedPage = (value) => {
     setSelectedPage(value)
   }
-
+  const checkIsTopOfPage = (value) => {
+    setIsTopOfPage(value)
+  }
   const value = useMemo(() => ({
     isTopOfPage,
     selectedPage,
-    handleSelectedPage,
-  }), [isTopOfPage, selectedPage, handleSelectedPage]);
+    changeSelectedPage,
+    checkIsTopOfPage,
+  }), [isTopOfPage, selectedPage, changeSelectedPage, checkIsTopOfPage]);
 
   return (
     <positionContext.Provider value={value}>
