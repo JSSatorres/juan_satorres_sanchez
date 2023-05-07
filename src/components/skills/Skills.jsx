@@ -8,16 +8,11 @@ import pict from '../../assets/icons/undraw_product_iteration_kjok.svg'
 
 const MySkills = () => (
   <section id='skills' className='pt-10 pb-24'>
-    {/* HEADER AND IMAGE SECTION */}
     <div className='md:flex md:justify-between md:gap-16 mt-32 mb-10 w-full '>
       <motion.div
         className='w-full'
         initial='hidden'
         whileInView='visible'
-          // whileHover={{
-          //   scale: 1.2,
-          //   transition: { duration: 1 },
-          // }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.8, delay: 0.5 }}
         variants={{
@@ -30,7 +25,6 @@ const MySkills = () => (
           {' '}
           <span className='text-primary'>SKILLS</span>
         </p>
-        {/* <LineGradient width='w-1/3' /> */}
       </motion.div>
     </div>
 
