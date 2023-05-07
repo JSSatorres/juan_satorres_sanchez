@@ -13,7 +13,6 @@ const MySkills = () => (
       <motion.div
         className='w-full'
         initial='hidden'
-        initial='hidden'
         whileInView='visible'
           // whileHover={{
           //   scale: 1.2,
