@@ -6,7 +6,6 @@ import NoMatch from './pages/noMatch'
 import AboutMe from './pages/aboutMe'
 import ContactPage from './pages/contact'
 import ProjectsPage from './pages/projectsPage'
-// import ProyectLists from './components/ProyectsLists'
 
 const router = createBrowserRouter([
   {
@@ -28,12 +27,6 @@ const router = createBrowserRouter([
       {
         path: 'projects',
         element: <ProjectsPage />,
-        // children: [
-        //   {
-        //     path: 'projects/:',
-        //     element: <ProyectList />,
-        //   },
-        // ],
       },
       {
         path: '*',
