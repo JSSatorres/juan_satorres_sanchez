@@ -8,14 +8,13 @@ import ContactSection from "@/components/sections/ContactSection";
 // import PortfolioSection from "@/components/sections/PortfolioSection";
 // import ServiceSection from "@/components/sections/ServiceSection";
 // import TestimonialSection from "@/components/sections/TestimonialSection";
-import { Contact } from "lucide-react";
+// import { Contact } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="px-4 md:px-[6rem] flex flex-col justify-center">
-      <ContactSection />    
+    <div className="px-4 md:px-[6rem] flex flex-row justify-center">
+      <ContactSection />
       <AboutSection />
     </div>
-
   );
 }
