@@ -32,7 +32,7 @@ function ServiceSection() {
           />
         </div>
       </section>
-      {/* <Separator className="bg-lightDark my-8 mb-[2.5rem] md:mb-[5rem]" /> */}
+      <Separator className="bg-lightDark my-8 mb-[2.5rem] md:mb-[5rem]" />
       <ServiceCard />
     </section>
   );
