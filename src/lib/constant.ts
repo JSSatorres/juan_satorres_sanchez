@@ -11,6 +11,15 @@ export const RESUME_EXPERIENCE = [
     duration: "Oct 2023 - Present",
     jobDescription:
       "Currently developing both frontend and backend solutions using Next.js, TypeScript, Node.js, and Express. Focused on building scalable applications and optimizing user experience.",
+    mainTechnologies: [
+      "Next.js",
+      "Redux",
+      "MaterialUI",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+    ],
   },
   {
     jobTitle: "Frontend Development",
@@ -18,13 +27,33 @@ export const RESUME_EXPERIENCE = [
     duration: "Mar 2023 - Present",
     jobDescription:
       "Specializing in frontend development with React.js, Redux, and MaterialUI. Contributing to the creation of high-performance user interfaces and enhancing application functionality.",
+    mainTechnologies: [
+      "React.js",
+      "metodología ágil",
+      "Kibana",
+      "Confluence",
+      "Rally",
+      "Jest",
+      "React Testing Library",
+      "Jenkins",
+    ],
   },
   {
-    jobTitle: "Software Development",
+    jobTitle: "Full-Stack Web Development",
     company: "Vocces Lab",
     duration: "Jun 2022 - Mar 2023",
     jobDescription:
       "Designed and implemented an internal logistics application and streamlined company registration processes. Utilized the MERN stack (MongoDB, Express.js, React.js, Node.js), along with Redux, React Query, and MaterialUI, to deliver efficient and user-centric solutions.",
+    mainTechnologies: [
+      "Vue.js",
+      "Pinia",
+      "React.js",
+      "Sass",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+    ],
   },
   {
     jobTitle: "Technical Engineering",
@@ -32,6 +61,15 @@ export const RESUME_EXPERIENCE = [
     duration: "Apr 2018 - Sep 2021",
     jobDescription:
       "Led the design and development of air handling units. Managed product design phases, ensuring quality control and adherence to technical specifications. Oversaw production supervision and delivery processes.",
+    mainTechnologies: [
+      "Next.js",
+      "Redux",
+      "MaterialUI",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+    ],
   },
   {
     jobTitle: "Product Development",
@@ -39,6 +77,15 @@ export const RESUME_EXPERIENCE = [
     duration: "Mar 2017 - Apr 2018",
     jobDescription:
       "Engaged in product development and engineering projects, optimizing performance and enhancing technical processes. Contributed to improving product functionality and efficiency.",
+    mainTechnologies: [
+      "Next.js",
+      "Redux",
+      "MaterialUI",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+    ],
   },
 ];
 
