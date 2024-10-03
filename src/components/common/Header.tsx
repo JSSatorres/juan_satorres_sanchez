@@ -8,8 +8,6 @@ interface IProps {
 
 export default function Header({ title, description, isSmall }: IProps) {
   return (
-    // <div>
-
     <header className="max-w-7xl mx-auto px-4 py-8">
       <nav className="flex justify-between items-center">
         <h1 className="text-2xl font-bold">Adams</h1>
