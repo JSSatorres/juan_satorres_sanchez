@@ -22,23 +22,6 @@ export default function Home() {
     // pages/index.js
 
     <div className="min-h-screen bg-gray-900 text-white">
-      <header className="max-w-7xl mx-auto px-4 py-8">
-        <nav className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Adams</h1>
-          <ul className="flex space-x-4">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li>
-              <a href="#">Testimonials</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
       <main className="max-w-7xl mx-auto px-4 py-16">
         <section className="flex flex-col md:flex-row items-center justify-between">
           <div>
