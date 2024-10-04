@@ -10,6 +10,39 @@ export const RESUME_INTRODUCTION =
 export const RESUME_INTRODUCTION_LONG =
   "I am a passionate Full-Stack Web Developer with a solid background in industrial design. After a successful career as a technical engineer, I decided to shift my professional trajectory towards software development, specializing in building robust and scalable web applications. With expertise in technologies such as React.js, Next.js, Node.js, TypeScript, and knowledge of Python, I have worked on complex projects that seamlessly integrate frontend and backend. My focus is on optimizing processes and enhancing user experience through innovative and efficient solutions.";
 
+export const SKILLS = [
+  {
+    title: "Full-Stack Development",
+    description:
+      "Experienced in building web applications using technologies like Next.js, React.js, and Node.js. Focused on scalability and performance optimization.",
+  },
+  {
+    title: "Backend Architecture",
+    description:
+      "Proficient in creating robust backend solutions with Node.js, Express, and MongoDB, ensuring efficient data handling and smooth server operations.",
+  },
+  {
+    title: "Industrial Engineering",
+    description:
+      "Background in Technical Industrial Engineering, specializing in product design, process optimization, and technical project management.",
+  },
+  {
+    title: "Frontend Optimization",
+    description:
+      "Expert in creating responsive and high-performance user interfaces with React.js, Redux, and MaterialUI, delivering seamless user experiences.",
+  },
+  {
+    title: "Project Management",
+    description:
+      "Skilled in managing full project lifecycles from design to implementation, particularly in engineering and software development projects.",
+  },
+  {
+    title: "Process Optimization",
+    description:
+      "Led the development of air handling units, improving technical processes and ensuring adherence to industry standards.",
+  },
+];
+
 export const RESUME_EXPERIENCE = [
   {
     jobTitle: "Full-Stack Web Development",
