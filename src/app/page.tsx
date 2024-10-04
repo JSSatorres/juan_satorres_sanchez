@@ -1,16 +1,17 @@
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  PORTFOLIO_OWNER_FULLNAME,
+  RESUME_INTRODUCTION,
+} from "@/lib/constant";
 import Image from "next/image";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-
-export const PORTFOLIO_OWNER_FULLNAME = "Juan Sánchez Satorres";
-export const RESUME_INTRODUCTION =
-  "I am a passionate Full-Stack Web Developer with a strong background in Industrial Engineering and a drive for creating efficient, scalable web applications.";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <main className="max-w-7xl mx-auto px-4 py-16">
         <section className="flex flex-col items-center justify-center text-center">
-          {/* Imagen redonda centrada con borde */}
           <div className="flex justify-center mb-8">
             <Image
               src="/images/profile-image.png"
@@ -29,13 +30,13 @@ export default function Home() {
 
             <div className="mt-6 flex space-x-4 justify-center">
               <a
-                href="https://github.com/tu-usuario"
+                href={GITHUB_URL}
                 className="bg-stone-950 px-4 py-2 rounded-full flex items-center"
               >
                 <FaGithub /> GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/tu-usuario"
+                href={LINKEDIN_URL}
                 className="bg-blue-700 px-4 py-2 rounded-full flex items-center"
               >
                 <FaLinkedin /> LinkedIn
@@ -44,7 +45,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Nueva sección de habilidades */}
         <section className="mt-16">
           <h2 className="text-3xl font-bold">Technical Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
