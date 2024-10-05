@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Manrope } from "next/font/google";
 import NavBar from "@/components/sections/NavBar";
+import "../../styles/styles.css";
 
 export const metadata: Metadata = {
   title: "Juan Portfolio",
