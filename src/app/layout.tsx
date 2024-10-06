@@ -3,6 +3,7 @@ import "./globals.css";
 import { Manrope } from "next/font/google";
 import NavBar from "@/components/sections/NavBar";
 import "../../styles/styles.css";
+import Footer from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
   title: "Juan Portfolio",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <main className=" bg-gray-900">
           <NavBar />
           {children}
+          <Footer />
         </main>
       </body>
     </html>
