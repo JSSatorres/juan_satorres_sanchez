@@ -25,11 +25,8 @@ export default function Home() {
 
           <div>
             <h1 className="text-4xl md:text-6xl font-bold">
-              <span className="text-textColorIm">I’m</span>
-              <span className="text-textColorName">
-                {" "}
-                {PORTFOLIO_OWNER_FULLNAME}
-              </span>
+              <span className="text-secondary">I’m</span>
+              <span className="text-main"> {PORTFOLIO_OWNER_FULLNAME}</span>
             </h1>
             <p className="mt-4 text-gray-400">{RESUME_INTRODUCTION}</p>
 
@@ -55,10 +52,15 @@ export default function Home() {
         </section>
 
         <section className="mt-16">
-          <h2 className="text-3xl font-bold">Technical Skills</h2>
+          <h2 className="text-3xl font-bold animate-fadeIn">
+            Technical Skills
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             {SKILLS.map((skill, index) => (
-              <div key={index} className="bg-backgroundLight p-6 rounded-lg">
+              <div
+                key={index}
+                className="bg-backgroundLight p-6 rounded-lg animate-fadeInUp hover:scale-105 transition-transform duration-300 ease-in-out"
+              >
                 <h3 className="text-xl font-bold">{skill.title}</h3>
                 <p className="text-gray-300">{skill.description}</p>
               </div>
