@@ -9,10 +9,12 @@ import {
 import { WorkExperience } from "@/lib/definitions";
 
 const ProjectCard = ({ work }: { work: WorkExperience }) => {
+  console.log(work);
+
   return (
-    <Card className="bg-black text-white flex flex-col justify-center items-center p-4 m-9 w-[900px] card_fade_in">
+    <Card className="bg-secondBackgrond text-white flex flex-col justify-center items-center p-4 m-9 w-5/6 card_fade_in">
       <CardHeader className="flex flex-col justify-center items-center">
-        <CardTitle>{work.company}</CardTitle>
+        <CardTitle className="text-main">{work.company}</CardTitle>
         <CardDescription>{work.jobTitle}</CardDescription>
         <CardDescription>{work.duration}</CardDescription>
       </CardHeader>
