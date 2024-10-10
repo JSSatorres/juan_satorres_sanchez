@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { X } from "lucide-react";
-import MainButton from "../common/MainButton";
-import { PORTFOLIO_OWNER_FIRSTNAME } from "@/lib/constant";
+import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
+import MainButton from "../ui/MainButton";
+import { PAGES_LINK } from "@/lib/constant/constactHeader";
 
 function NavBar() {
   const [menu, setMenu] = useState(false);
@@ -12,42 +12,49 @@ function NavBar() {
     setMenu(!menu);
   };
 
-  const pagesLink = [
-    { href: "/experience", text: "Experience" },
-    { href: "/projects", text: "Projects" },
-    { href: "/contact", text: "Contact" },
-    // { href: "/about", text: "About" },
-    // { href: "/services", text: "Services" },
-  ];
-
-  // <header className="max-w-7xl mx-auto px-4 py-8">
-  //   <nav className="flex justify-between items-center">
-  //     <h1 className="text-2xl font-bold">Adams</h1>
-  //     <ul className="flex space-x-4">
-  //       <li>
-  //         <a href="#">Home</a>
-  //       </li>
-  //       <li>
-  //         <a href="#">Portfolio</a>
-  //       </li>
-  //       <li>
-  //         <a href="#">Testimonials</a>
-  //       </li>
-  //     </ul>
-  //   </nav>
-  // </header>;
-
   return (
-    <header className="max-w-7xl mx-auto px-4 py-8 sticky top-0">
-      {/* <nav className="md:sticky md:top-0  bg-background md:shadow-none z-[10] p-4"> */}
-      <nav className="flex justify-between items-center">
-        <h1 className="text-white text-2xl font-bold">Home</h1>
-        <ul className="flex space-x-4">
-          {pagesLink.map((item) => (
+    <header className="bg-secondBackgrond w-full px-4 py-4 sticky top-0 z-20 shadow-md">
+      <nav className="flex justify-between items-center max-w-7xl mx-auto">
+        <Link
+          href="/"
+          className="text-main hover:text-secondary text-lg md:text-2xl font-bold capitalize transition duration-300"
+          onClick={() => setMenu(false)}
+        >
+          Home
+        </Link>
+
+        <div className="md:hidden shadow-lg">
+          <MainButton onClick={toggleMenu}>
+            {menu ? <AiOutlineClose size={24} /> : "Menu"}
+          </MainButton>
+        </div>
+
+        {/* Mobile Menu */}
+        {menu && (
+          <div className="absolute top-16 left-0 right-0 bg-background shadow-lg z-10 py-4">
+            <ul className="flex flex-col items-center space-y-4">
+              {PAGES_LINK.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-main hover:text-secondary text-lg font-bold capitalize transition duration-300"
+                    onClick={() => setMenu(false)}
+                  >
+                    {item.text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex space-x-8">
+          {PAGES_LINK.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="text-white hover:text-gray-400 text-2xl md:text-4xl font-extrabold uppercase"
+                className="text-main hover:text-secondary text-lg md:text-2xl font-semibold capitalize transition duration-300"
               >
                 {item.text}
               </Link>
