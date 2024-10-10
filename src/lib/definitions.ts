@@ -1,6 +1,14 @@
-interface Project {
+export interface Project {
+  id?: number;
   projectTitle: string;
   technologies: string;
+  url?: string;
+}
+
+export interface FormInput {
+  name: string;
+  email: string;
+  message: string;
 }
 
 export interface WorkExperience {
@@ -10,4 +18,10 @@ export interface WorkExperience {
   duration: string;
   // img: string;
   projects: Project[];
+}
+export interface YearTimelineProps {
+  workExperience: WorkExperience[];
+  activeIndex: number;
+  handleScrollTo: (index: number) => void;
+  getYearFromDate: (date: string) => string;
 }
