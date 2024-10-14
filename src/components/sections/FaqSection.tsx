@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../common/Header";
+
 import {
   Accordion,
   AccordionContent,
@@ -68,11 +68,6 @@ function FaqSection() {
   };
   return (
     <section className="">
-      <section className="flex justify-between gap-[1.25rem] mb-[3.12rem]">
-        <div>
-          <Header title="faqs" description="Frequently Asked Questions" />
-        </div>
-      </section>
       <div className="flex justify-between gap-[3.12rem] flex-col xl:flex-row">
         <Accordion
           type="single"
