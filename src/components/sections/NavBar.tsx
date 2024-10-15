@@ -17,7 +17,7 @@ function NavBar() {
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
         <Link
           href="/"
-          className="text-main hover:text-secondary text-lg md:text-2xl font-bold capitalize transition duration-300"
+          className="text-main hover:text-primary text-lg md:text-2xl font-bold capitalize transition duration-300"
           onClick={() => setMenu(false)}
         >
           Home
@@ -37,7 +37,7 @@ function NavBar() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-main hover:text-secondary text-lg font-bold capitalize transition duration-300"
+                    className="text-main hover:text-primary text-lg font-bold capitalize transition duration-300"
                     onClick={() => setMenu(false)}
                   >
                     {item.text}
@@ -54,7 +54,7 @@ function NavBar() {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="text-main hover:text-secondary text-lg md:text-2xl font-semibold capitalize transition duration-300"
+                className="text-main hover:text-primary text-lg md:text-2xl font-semibold capitalize transition duration-300"
               >
                 {item.text}
               </Link>
