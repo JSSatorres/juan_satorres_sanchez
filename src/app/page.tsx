@@ -25,7 +25,7 @@ export default function Home() {
 
           <div>
             <h1 className="text-4xl md:text-6xl font-bold">
-              <span className="text-secondary">I’m</span>
+              <span className="text-primary">I’m</span>
               <span className="text-main"> {PORTFOLIO_OWNER_FULLNAME}</span>
             </h1>
             <p className="mt-4 text-main">{RESUME_INTRODUCTION}</p>
@@ -52,7 +52,7 @@ export default function Home() {
         </section>
 
         <section className="mt-16">
-          <h2 className="text-3xl text-secondary font-bold animate-fadeIn">
+          <h2 className="text-3xl text-primary font-bold animate-fadeIn">
             Technical Skills
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
@@ -61,7 +61,7 @@ export default function Home() {
                 key={index}
                 className="bg-backgroundLight p-6 rounded-lg animate-fadeInUp hover:scale-105 transition-transform duration-300 ease-in-out"
               >
-                <h3 className="text-xl text-secondary font-bold">
+                <h3 className="text-xl text-primary font-bold">
                   {skill.title}
                 </h3>
                 <p className="text-main">{skill.description}</p>
