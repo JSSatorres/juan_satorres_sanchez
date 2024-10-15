@@ -10,7 +10,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-white">
+    <div className="min-h-screen bg-background text-main">
       <main className="max-w-7xl mx-auto px-4 py-16">
         <section className="flex flex-col items-center justify-center text-center">
           <div className="flex justify-center mb-8">
@@ -28,7 +28,7 @@ export default function Home() {
               <span className="text-secondary">I’m</span>
               <span className="text-main"> {PORTFOLIO_OWNER_FULLNAME}</span>
             </h1>
-            <p className="mt-4 text-gray-400">{RESUME_INTRODUCTION}</p>
+            <p className="mt-4 text-main">{RESUME_INTRODUCTION}</p>
 
             <div className="mt-6 flex space-x-4 justify-center">
               <a
@@ -52,7 +52,7 @@ export default function Home() {
         </section>
 
         <section className="mt-16">
-          <h2 className="text-3xl font-bold animate-fadeIn">
+          <h2 className="text-3xl text-secondary font-bold animate-fadeIn">
             Technical Skills
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
@@ -61,8 +61,10 @@ export default function Home() {
                 key={index}
                 className="bg-backgroundLight p-6 rounded-lg animate-fadeInUp hover:scale-105 transition-transform duration-300 ease-in-out"
               >
-                <h3 className="text-xl font-bold">{skill.title}</h3>
-                <p className="text-gray-300">{skill.description}</p>
+                <h3 className="text-xl text-secondary font-bold">
+                  {skill.title}
+                </h3>
+                <p className="text-main">{skill.description}</p>
               </div>
             ))}
           </div>
