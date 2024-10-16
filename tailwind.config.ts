@@ -11,18 +11,20 @@ const config = {
   theme: {
     extend: {
       colors: {
-        main: "#05AFF2", // Azulete
-        primary: "#03738C", // Color primario
-        secondary: "#05C7F2", // Amarillo"
+        main: "#1F375B", // Azul oscuro
+        primary: "#05C7F2", // Color azuk claro
+        darkPrimary: "#049AC0",
+        secondary: "#F7AF6D", // Amarillo"
         success: "#28A745",
-        error: "#DC3545",
+        error: "#FF0D06",
         warning: "#FFC107",
         info: "#17A2B8",
         tertiary: "#6F42C1",
+        Darktxt: "black",
 
-        background: "#081B26", // Gris 900
-        secondBackgrond: "#2F5266", //
-        backgroundLight: "#081B50", // Gris 800
+        background: "#EAF2FB", // Gris muy claro
+        secondBackgrond: "#D5E4F6", //
+        backgroundLight: "#E0EAF8", // Gris 800
         customGrayAlt: "#797C86", // Otro gris
         customGrayAlt2: "#AFB0B6", // Un tercer gris
         customGray90: "#E4E4E6", // Gris claro
