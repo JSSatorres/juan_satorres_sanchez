@@ -11,10 +11,9 @@ const getYearFromDate = (dateString: string) => {
 };
 
 const Page: React.FC = () => {
-  const sectionsRef = useRef<(HTMLDivElement | null)[]>([]); // Referencia a cada sección
-  const [activeIndex, setActiveIndex] = useState<number>(0); // Estado para manejar el índice activo
+  const sectionsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
-  // Función que usa IntersectionObserver
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -23,7 +22,7 @@ const Page: React.FC = () => {
             const index = sectionsRef.current.findIndex(
               (section) => section === entry.target
             );
-            setActiveIndex(index); // Actualizar el índice activo
+            setActiveIndex(index);
           }
         });
       },
@@ -33,7 +32,6 @@ const Page: React.FC = () => {
       }
     );
 
-    // Observar todas las secciones (tarjetas de experiencia)
     sectionsRef.current.forEach((section) => {
       if (section) {
         observer.observe(section);
@@ -43,13 +41,12 @@ const Page: React.FC = () => {
     return () => {
       sectionsRef.current.forEach((section) => {
         if (section) {
-          observer.unobserve(section); // Dejar de observar las secciones
+          observer.unobserve(section);
         }
       });
     };
   }, []);
 
-  // Función para hacer scroll hasta la sección correspondiente
   const handleScrollTo = (index: number) => {
     sectionsRef.current[index]?.scrollIntoView({ behavior: "smooth" });
   };

@@ -14,10 +14,14 @@ export const workExperience = [
       {
         projectTitle: "Cleint Dashboard",
         technologies: "VueJs, NodeJs,  Pinia, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
       {
         projectTitle: "Cleint Survey",
         technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
     ],
   },
@@ -26,15 +30,18 @@ export const workExperience = [
     jobTitle: "Full stack web developer",
     jobDescription: "Full-stack developing projects",
     duration: "June 2023 - at present",
-    // img: vocces,
     projects: [
       {
         projectTitle: "Cleint Dashboard",
         technologies: "VueJs, NodeJs,  Pinia, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
       {
         projectTitle: "Cleint Survey",
         technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
     ],
   },
@@ -43,15 +50,18 @@ export const workExperience = [
     jobTitle: "Full stack web developer",
     jobDescription: "Full-stack developing projects",
     duration: "June 2022 - at present",
-    // img: vocces,
     projects: [
       {
         projectTitle: "Cleint Dashboard",
         technologies: "VueJs, NodeJs,  Pinia, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
       {
         projectTitle: "Cleint Survey",
         technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
     ],
   },
@@ -60,16 +70,19 @@ export const workExperience = [
     jobTitle: "Full stack web developer",
     jobDescription: "Full-stack developing projects",
     duration: "September 2021 - May 2022",
-    // img: assembler,
     projects: [
       {
         projectTitle: "Clon Spotify",
         technologies:
           "ReactJs, Redux-toolkit, NodeJs, Express, Mongoose, Mongo, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
       {
         projectTitle: "real estate portal",
         technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
     ],
   },
@@ -79,15 +92,18 @@ export const workExperience = [
     jobDescription:
       "Design and development of air handling units as team leader",
     duration: "April 2018 - September 2021",
-    // img: stulz,
     projects: [
       {
         projectTitle: "Cleint Dashboard",
         technologies: "VueJs, NodeJs,  Pinia, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
       {
         projectTitle: "Cleint Survey",
         technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
     ],
   },
@@ -96,15 +112,18 @@ export const workExperience = [
     jobTitle: "Technichal engineer",
     jobDescription: "Product design phase control manager",
     duration: "February 2017 - April 2018",
-    // img: tecnesis,
     projects: [
       {
         projectTitle: "Cleint Dashboard",
         technologies: "VueJs, NodeJs,  Pinia, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
       {
         projectTitle: "Cleint Survey",
         technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        image: "/path/to/imageA.jpg",
+        url: "https://example.com/project-a",
       },
     ],
   },
