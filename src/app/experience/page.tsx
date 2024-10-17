@@ -3,7 +3,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import ProjectCard from "@/components/cards/ProjectCard";
 import { workExperience } from "@/lib/constant/projectsConstant";
-import YearTimeline from "@/components/YearTimeline"; // Importamos el nuevo componente
+import ExperienceTimeline from "@/components/sections/ExperienceTimeline";
 
 const getYearFromDate = (dateString: string) => {
   const dateParts = dateString.split(" ");
@@ -58,7 +58,7 @@ const Page: React.FC = () => {
     <section className="m-7 flex flex-col md:flex-row">
       {/* Eje de Años - Barra fija a la izquierda en desktop y arriba en móvil */}
       <div className="md:w-1/4 w-full">
-        <YearTimeline
+        <ExperienceTimeline
           activeIndex={activeIndex}
           handleScrollTo={handleScrollTo}
           getYearFromDate={getYearFromDate}
