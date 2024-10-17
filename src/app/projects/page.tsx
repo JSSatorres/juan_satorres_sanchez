@@ -30,16 +30,18 @@ const ProjectsPage = () => {
           {filteredProjects.map((project: Project) => (
             <div key={project.id} className="bg-backgroundLight p-4 rounded-lg">
               <Link
-                href={project.url}
+                href={project?.url || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
                   src={project.image}
-                  alt={project.name}
+                  alt={project.projectTitle}
                   className="w-full h-40 object-cover rounded-md"
                 />
-                <h2 className="text-xl font-bold mt-4">{project.name}</h2>
+                <h2 className="text-xl font-bold mt-4">
+                  {project.projectTitle}
+                </h2>{" "}
                 <p className="text-gray-400 mt-2">
                   {project.technologies.join(", ")}
                 </p>
