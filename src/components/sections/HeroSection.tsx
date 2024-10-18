@@ -1,4 +1,3 @@
-import { PORTFOLIO_OWNER_FULLNAME } from "@/lib/constant";
 import React from "react";
 
 function HeroSection() {
@@ -9,9 +8,9 @@ function HeroSection() {
           <p className="text-customGray uppercase text-[1.375rem] font-[500]">
             Stunning Photography by
           </p>
-          <p className="uppercase font-[600] text-[2.5rem] md:text-[5rem] text-white md:w-[min-content] lg:w-[max-content]">
+          {/* <p className="uppercase font-[600] text-[2.5rem] md:text-[5rem] text-white md:w-[min-content] lg:w-[max-content]">
             {PORTFOLIO_OWNER_FULLNAME}
-          </p>
+          </p> */}
         </div>
         <div className="hidden lg:block">
           <img src="/images/stylish_double_c.png" alt="stylish double c" />

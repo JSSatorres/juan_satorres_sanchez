@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../common/Header";
-import MainButton from "../common/MainButton";
+// import Header from "../common/Header";
+// import MainButton from "../common/MainButton";
 import { ArrowRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
-import PortfolioCard from "../cards/PortfolioCard";
+// import PortfolioCard from "../cards/PortfolioCard";
 
 function PortfolioSection() {
   const portfolioData = [
@@ -33,10 +33,10 @@ function PortfolioSection() {
     <section className="">
       <section className="flex justify-between flex-col md:flex-row gap-[1.25rem]">
         <div>
-          <Header
+          {/* <Header
             title="Portfolio"
             description="Explore My photography work."
-          />
+          /> */}
         </div>
         <div className="flex items-center gap-8">
           <div className="hidden lg:inline-flex border border-lightDark rounded-[6.25rem]  justify-between p-[0.62rem] gap-4 w-[170px]">
@@ -51,16 +51,16 @@ function PortfolioSection() {
               className="cursor-pointer"
             />
           </div>
-          <MainButton
+          {/* <MainButton
             text="View All Works"
             rightIconComponent={<ArrowRight />}
             classes="w-[13.12rem]"
-          />
+          /> */}
         </div>
       </section>
       <Separator className="bg-lightDark my-8 mb-[2.5rem] md:mb-[5rem]" />
       <div className="flex justify-between gap-[3.12rem] flex-col xl:flex-row">
-        {portfolioData.map((portfolio) => (
+        {/* {portfolioData.map((portfolio) => (
           <PortfolioCard
             imageUrl={portfolio.imageUrl}
             key={portfolio.id}
@@ -68,7 +68,7 @@ function PortfolioSection() {
             date={portfolio.date}
             link={portfolio.link}
           />
-        ))}
+        ))} */}
       </div>
     </section>
   );
