@@ -13,13 +13,13 @@ export const workExperience = [
     projects: [
       {
         projectTitle: "Cleint Dashboard",
-        technologies: "VueJs, NodeJs,  Pinia, SQL, Sass",
+        technologies: ["VueJs", "NodeJs", "Pinia", "SQL", "Sass"],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
       {
         projectTitle: "Cleint Survey",
-        technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        technologies: ["ReactJs, NodeJs,  Redux-toolkit, SQL, Sass"],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
@@ -33,13 +33,13 @@ export const workExperience = [
     projects: [
       {
         projectTitle: "Cleint Dashboard",
-        technologies: "VueJs, NodeJs,  Pinia, SQL, Sass",
+        technologies: ["VueJs, NodeJs,  Pinia, SQL, Sass"],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
       {
         projectTitle: "Cleint Survey",
-        technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        technologies: ["ReactJs", "NodeJs", "Redux-toolkit", "SQL", "Sass"],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
@@ -53,13 +53,13 @@ export const workExperience = [
     projects: [
       {
         projectTitle: "Cleint Dashboard",
-        technologies: "VueJs, NodeJs,  Pinia, SQL, Sass",
+        technologies: ["VueJs, NodeJs,  Pinia, SQL, Sass"],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
       {
         projectTitle: "Cleint Survey",
-        technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        technologies: ["ReactJs, NodeJs,  Redux-toolkit, SQL, Sass"],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
@@ -73,15 +73,21 @@ export const workExperience = [
     projects: [
       {
         projectTitle: "Clon Spotify",
-        technologies:
-          "ReactJs, Redux-toolkit, NodeJs, Express, Mongoose, Mongo, Sass",
+        technologies: [
+          "ReactJs",
+          "Redux-toolkit",
+          "NodeJs",
+          "Express",
+          "Mongoose",
+          "Mongo",
+          "Sass",
+        ],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
       {
         projectTitle: "real estate portal",
-        technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
-        image: "/path/to/imageA.jpg",
+        technologies: ["ReactJs", "NodeJs", "Redux-toolkit", "SQL", "Sass"],
         url: "https://example.com/project-a",
       },
     ],
@@ -95,13 +101,13 @@ export const workExperience = [
     projects: [
       {
         projectTitle: "Cleint Dashboard",
-        technologies: "VueJs, NodeJs,  Pinia, SQL, Sass",
+        technologies: ["VueJs", "NodeJs", "Pinia", "SQL", "Sass"],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
       {
         projectTitle: "Cleint Survey",
-        technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        technologies: ["ReactJs", "NodeJs", "Redux-toolkit", "SQL", "Sass"],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
@@ -115,13 +121,13 @@ export const workExperience = [
     projects: [
       {
         projectTitle: "Cleint Dashboard",
-        technologies: "VueJs, NodeJs,  Pinia, SQL, Sass",
+        technologies: ["VueJs", "NodeJs", "Pinia", "SQL", "Sass"],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
       {
         projectTitle: "Cleint Survey",
-        technologies: "ReactJs, NodeJs,  Redux-toolkit, SQL, Sass",
+        technologies: ["ReactJs", "NodeJs", "Redux-toolkit", "SQL", "Sass"],
         image: "/path/to/imageA.jpg",
         url: "https://example.com/project-a",
       },
