@@ -17,7 +17,6 @@ export interface WorkExperience {
   jobTitle: string;
   jobDescription: string;
   duration: string;
-  // img: string;
   projects: Project[];
 }
 export interface YearTimelineProps {
