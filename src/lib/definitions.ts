@@ -25,3 +25,10 @@ export interface YearTimelineProps {
   handleScrollTo: (index: number) => void;
   getYearFromDate: (date: string) => string;
 }
+
+export interface GitHubRepo {
+  id: number;
+  name: string;
+  html_url: string;
+  description: string | null;
+}
