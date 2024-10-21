@@ -1,34 +1,31 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { WorkExperience } from "@/lib/definitions";
+import { GitHubRepo } from "@/lib/definitions";
+import Link from 'next/link';
 
-const ProjectCard = ({ work }: { work: WorkExperience }) => {
-  console.log(work);
-
+const ProjectCard = ({repo}:{repo: GitHubRepo}) => {
   return (
-    <Card className="bg-secondBackgrond text-white flex flex-col justify-center items-center p-4 m-9 w-5/6 card_fade_in">
+    <Card className="bg-secondBackgrond flex flex-col justify-center items-center p-4  ">
+
       <CardHeader className="flex flex-col justify-center items-center">
-        <CardTitle className="text-main">{work?.company}</CardTitle>
-        <CardDescription>{work?.jobTitle}</CardDescription>
-        <CardDescription>{work?.duration}</CardDescription>
+        <CardTitle className="text-main ">{repo.name.replace(/[-_]/g, ' ')}</CardTitle>     
       </CardHeader>
+      
       <CardContent>
-        <p>{work?.jobDescription}:</p>
+        <p className="text-gray-600 mt-2">Description: {repo.description || 'No description provided'}</p>
+        <p className="text-gray-600 mt-2">Language: {repo.language || 'Not specified'}</p>
+        <p className="text-gray-600 mt-2">Created on: {new Date(repo.created_at).toLocaleDateString()}</p>
       </CardContent>
-      {work?.projects.map((project) => (
-        <CardContent key={project?.projectTitle}>
-          <CardTitle>{project?.projectTitle}</CardTitle>
-          {/* <CardDescription>{project.technologies}</CardDescription> */}
-        </CardContent>
-      ))}
+
       <CardFooter>
-        <p>Card Footer</p>
+        <Link href={repo.html_url} target="_blank" rel="noopener noreferrer">
+          <h6 className="text-sm text-primary font-bold mt-4">{repo.full_name}</h6>
+        </Link>
       </CardFooter>
     </Card>
   );
