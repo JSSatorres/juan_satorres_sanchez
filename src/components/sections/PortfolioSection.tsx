@@ -2,7 +2,7 @@ import React from "react";
 // import Header from "../common/Header";
 // import MainButton from "../common/MainButton";
 import { ArrowRight } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
+
 // import PortfolioCard from "../cards/PortfolioCard";
 
 function PortfolioSection() {
@@ -58,7 +58,7 @@ function PortfolioSection() {
           /> */}
         </div>
       </section>
-      <Separator className="bg-lightDark my-8 mb-[2.5rem] md:mb-[5rem]" />
+
       <div className="flex justify-between gap-[3.12rem] flex-col xl:flex-row">
         {/* {portfolioData.map((portfolio) => (
           <PortfolioCard
