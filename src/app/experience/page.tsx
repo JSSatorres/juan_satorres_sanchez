@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import ProjectCard from "@/components/cards/ProjectCard";
+import ProjectCard from "@/components/cards/ExperienceCard";
 import { workExperience } from "@/lib/constant/projectsConstant";
 import ExperienceTimeline from "@/components/sections/ExperienceTimeline";
 
