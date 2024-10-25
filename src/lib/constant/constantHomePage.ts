@@ -1,5 +1,5 @@
 export const PORTFOLIO_OWNER_FIRSTNAME = "juan";
-export const PORTFOLIO_OWNER_FULLNAME = "Juan Sánchez Satorres";
+export const PORTFOLIO_OWNER_FULLNAME = "Juan Satorres Sánchez";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/in/juan-s%C3%A1nchez-satorres/";
 export const GITHUB_URL = "https://github.com/JSSatorres";
