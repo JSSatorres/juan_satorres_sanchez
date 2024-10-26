@@ -4,7 +4,7 @@ import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import MainButton from "../ui/MainButton";
-import { PAGES_LINK } from "@/lib/constant/constactHeader";
+import { PAGES_LINK } from "@/lib/constant/headerConstant";
 
 function NavBar() {
   const [menu, setMenu] = useState(false);
