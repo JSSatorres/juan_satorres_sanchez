@@ -25,6 +25,7 @@ const ProjectCard = ({repo}:{repo: GitHubRepo}) => {
       <CardFooter>
         <Link href={repo.html_url} target="_blank" rel="noopener noreferrer">
           <h6 className="text-sm text-primary font-bold mt-4">{repo.full_name}</h6>
+          <p className="text-sm text-gray-600 mt-2">View on GitHub</p>
         </Link>
       </CardFooter>
     </Card>
