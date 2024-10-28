@@ -13,7 +13,7 @@ console.log( "GITHUB_USERNAME aaaaaaa:", process.env.NEXT_PUBLIC_GITHUB_USERNAME
       headers: token ? { Authorization: `token ${token}` } : undefined,
     }
   );
-   
+
   if (!response.ok) {
     return NextResponse.error();
   }
