@@ -1,35 +1,35 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import { GitHubRepo } from '@/lib/definitions';
-import MainProyects from './components/MainProyects';
-import GitHubProject from './components/GitHubProjects';
-
+import { useEffect, useState } from "react";
+import { GitHubRepo } from "@/lib/definitions";
+import MainProyects from "./components/MainProyects";
+import GitHubProject from "./components/GitHubProjects";
 
 const ProjectsPage = () => {
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
   const [topTechnologies, setTopTechnologies] = useState<string[]>([]);
-  const [selectedTech, setSelectedTech] = useState<string>('');
+  const [selectedTech, setSelectedTech] = useState<string>("");
 
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch('/api/github');
+        const response = await fetch("/api/github");
         if (!response.ok) {
-          throw new Error('Failed to fetch repositories');
+          throw new Error("Failed to fetch repositories");
         }
-        
+
         const data: GitHubRepo[] = await response.json();
         setRepos(data);
-        
-        const topTechnologiesFound = data.map(ele => ele.language);
-        const cleanTopTechnologies = Array.from(new Set(topTechnologiesFound)).filter(item => item !== null)
-        console.log(cleanTopTechnologies);
-        
-        setTopTechnologies(cleanTopTechnologies);
 
+        const topTechnologiesFound = data.map((ele) => ele.language);
+        const cleanTopTechnologies = Array.from(
+          new Set(topTechnologiesFound)
+        ).filter((item) => item !== null);
+        console.log(cleanTopTechnologies);
+
+        setTopTechnologies(cleanTopTechnologies);
       } catch (error) {
-        console.error('Error fetching repositories:', error);
+        console.error("Error fetching repositories:", error);
       }
     };
 
@@ -42,14 +42,13 @@ const ProjectsPage = () => {
 
   return (
     <main className="min-h-screen bg-background text-main px-4 py-16">
-      
       <MainProyects />
       <GitHubProject
         repos={filteredRepos}
         selectedTech={selectedTech}
         topTechnologies={topTechnologies}
         onTechChange={(tech) => setSelectedTech(tech)}
-      /> 
+      />
     </main>
   );
 };
