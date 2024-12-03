@@ -37,8 +37,8 @@ const Contact = () => {
   };
 
   return (
-    <main className="min-h-screen bg-background text-main px-4 py-16 overflow-x-hidden">
-      <div className="max-w-2xl mx-auto bg-secondBackgrond p-8 rounded-lg shadow-xl mt-10">
+    <main className="bg-background text-main px-4 py-16 overflow-x-hidden">
+      <div className="max-w-2xl mx-auto bg-secondBackgrond p-8 rounded-lg shadow-xl mt-5">
         <h1 className="text-3xl font-bold mb-6 text-center">Contact Me</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div>
