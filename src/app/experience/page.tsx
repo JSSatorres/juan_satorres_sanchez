@@ -32,14 +32,15 @@ const Page: React.FC = () => {
       }
     );
 
-    sectionsRef.current.forEach((section) => {
+    const currentSections = sectionsRef.current;
+    currentSections.forEach((section) => {
       if (section) {
         observer.observe(section);
       }
     });
 
     return () => {
-      sectionsRef.current.forEach((section) => {
+      currentSections.forEach((section) => {
         if (section) {
           observer.unobserve(section);
         }
@@ -52,7 +53,7 @@ const Page: React.FC = () => {
   };
 
   return (
-    <section className="m-7 flex flex-col md:flex-row">
+    <section className="m-7 flex flex-col md:flex-row min-h-screen bg-background text-main px-4 py-16">
       {/* Eje de Años - Barra fija a la izquierda en desktop y arriba en móvil */}
       <div className="md:w-1/4 w-full">
         <ExperienceTimeline
