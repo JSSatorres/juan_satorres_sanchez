@@ -18,15 +18,15 @@ const ExperienceTimeline: React.FC<YearTimelineProps> = ({
         {workExperience.map((work, index) => (
           <li
             key={index}
-            className={`cursor-pointer text-xl font-bold transition duration-200 text-white relative flex md:flex-row flex-col items-center`}
+            className={`cursor-pointer text-xl font-bold transition duration-200 text-main relative flex md:flex-row flex-col items-center`}
             onClick={() => handleScrollTo(index)}
           >
             {/* Puntos de la línea */}
             <div className="relative flex items-center">
               <span
                 className={`w-4 h-4 rounded-full z-10 ${
-                  activeIndex === index ? "bg-green-400" : "bg-white"
-                }`}
+                  activeIndex === index ? "bg-green-400" : "bg-main"
+                } hover:bg-opacity-75`}
               ></span>
               <span className="text-sm ml-4 md:ml-2">
                 {getYearFromDate(work?.duration)}
