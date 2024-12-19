@@ -12,11 +12,15 @@ const ProjectCard = ({ work }: { work: WorkExperience }) => {
   console.log(work);
 
   return (
-    <Card className="bg-secondBackgrond text-white flex flex-col justify-center items-center p-4 m-9 w-5/6 card_fade_in">
+    <Card className="bg-secondBackgrond   flex flex-col justify-center items-center p-4 m-9 w-5/6 card_fade_in">
       <CardHeader className="flex flex-col justify-center items-center">
-        <CardTitle className="text-main">{work?.company}</CardTitle>
-        <CardDescription>{work?.jobTitle}</CardDescription>
-        <CardDescription>{work?.duration}</CardDescription>
+        <CardTitle className="text-main text-4xl">{work?.company}</CardTitle>
+        <CardDescription className="text-main text-xl">
+          {work?.jobTitle}
+        </CardDescription>
+        <CardDescription className="text-main text-xl">
+          {work?.duration}
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <p>{work?.jobDescription}:</p>
