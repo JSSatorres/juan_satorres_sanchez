@@ -1,8 +1,10 @@
 export interface Project {
-  id?: number;
   projectTitle: string;
-  image?: string;
   technologies: string[];
+  description: string;
+  responsibilities: string;
+  achievements: string;
+  image?: string;
   url?: string;
 }
 
