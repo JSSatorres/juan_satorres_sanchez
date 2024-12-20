@@ -59,7 +59,7 @@ export default function Home() {
             {SKILLS.map((skill, index) => (
               <div
                 key={index}
-                className="bg-backgroundLight p-6 rounded-lg animate-fadeInUp hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="bg-secondBackgrond p-6 rounded-lg animate-fadeInUp hover:scale-105 transition-transform duration-300 ease-in-out"
               >
                 <h3 className="text-xl text-primary font-bold">
                   {skill.title}
