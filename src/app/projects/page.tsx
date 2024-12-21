@@ -41,7 +41,7 @@ const ProjectsPage = () => {
   );
 
   return (
-    <main className="min-h-screen bg-background text-main px-4 py-16">
+    <main className="min-h-screen bg-background text-main px-8 py-16 flex flex-col items-center">
       <MainProyects />
       <GitHubProject
         repos={filteredRepos}
