@@ -1,27 +1,5 @@
-const favoriteProjects = [
-  {
-    id: 1,
-    name: "Favorite Project 1",
-    full_name: "user/favorite-project-1",
-    html_url: "https://github.com/user/favorite-project-1",
-    demo_url: "https://user.github.io/favorite-project-1", // Enlace al proyecto desplegado
-    language: "JavaScript",
-    description: "Este es un proyecto increíble que hace X.",
-    technologies: ["React", "Node.js", "CSS"],
-    image_url: "https://via.placeholder.com/150", // Reemplaza con la URL de la imagen real
-  },
-  {
-    id: 2,
-    name: "Favorite Project 2",
-    full_name: "user/favorite-project-2",
-    html_url: "https://github.com/user/favorite-project-2",
-    demo_url: "https://user.github.io/favorite-project-2", // Enlace al proyecto desplegado
-    language: "TypeScript",
-    description: "Este proyecto es excelente para aprender Y.",
-    technologies: ["Angular", "Sass", "Firebase"],
-    image_url: "https://via.placeholder.com/150", // Reemplaza con la URL de la imagen real
-  },
-];
+import { favoriteProjects } from "@/lib/constant/constantProjects";
+
 
 const MainProyects = () => {
   return (
