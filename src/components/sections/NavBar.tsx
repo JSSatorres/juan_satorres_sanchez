@@ -13,7 +13,7 @@ function NavBar() {
   };
 
   return (
-    <header className="bg-secondBackgrond w-full px-4 py-4 sticky top-0 z-20 shadow-md">
+    <header className="card  w-full px-4 py-4 sticky top-0 z-20 shadow-3d-soft">
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
         <Link
           href="/"
@@ -23,15 +23,15 @@ function NavBar() {
           Home
         </Link>
 
-        <div className="md:hidden shadow-lg">
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
           <MainButton onClick={toggleMenu}>
             {menu ? <AiOutlineClose size={24} /> : "Menu"}
           </MainButton>
         </div>
 
-        {/* Mobile Menu */}
         {menu && (
-          <div className="absolute top-16 left-0 right-0 bg-background shadow-lg z-10 py-4">
+          <div className="absolute top-16 left-0 right-0 card">
             <ul className="flex flex-col items-center space-y-4">
               {PAGES_LINK.map((item) => (
                 <li key={item.href}>
@@ -48,7 +48,6 @@ function NavBar() {
           </div>
         )}
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
           {PAGES_LINK.map((item) => (
             <li key={item.href}>
