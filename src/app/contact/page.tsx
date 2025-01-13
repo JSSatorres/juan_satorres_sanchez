@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <main className="bg-background text-textPrimary px-4 py-16 overflow-x-hidden">
-      <div className="max-w-2xl mx-auto bg-card p-8 rounded-card shadow-deep mt-5">
+      <div className="max-w-2xl mx-auto bg-card p-8 rounded-card shadow-3d-deep mt-5">
         <h1 className="text-3xl font-bold mb-6 text-center text-main">
           Contact Me
         </h1>
@@ -50,9 +50,9 @@ const Contact = () => {
             <input
               type="text"
               {...register("name")}
-              className={`w-full p-4 bg-secondary text-textPrimary rounded-card border-2 ${
+              className={`w-full p-4 bg-secondary text-textPrimary rounded-card border-2 shadow-3d-soft ${
                 errors.name ? "border-error" : "border-border"
-              } focus:outline-none focus:ring-2 focus:ring-accent shadow-subtle`}
+              } focus:outline-none focus:ring-2 focus:ring-accent`}
               placeholder="Enter your name"
             />
             {errors.name && (
@@ -67,9 +67,9 @@ const Contact = () => {
             <input
               type="email"
               {...register("email")}
-              className={`w-full p-4 bg-secondary text-textPrimary rounded-card border-2 ${
+              className={`w-full p-4 bg-secondary text-textPrimary rounded-card border-2 shadow-3d-soft ${
                 errors.email ? "border-error" : "border-border"
-              } focus:outline-none focus:ring-2 focus:ring-accent shadow-subtle`}
+              } focus:outline-none focus:ring-2 focus:ring-accent`}
               placeholder="Enter your email"
             />
             {errors.email && (
@@ -83,9 +83,9 @@ const Contact = () => {
             </label>
             <textarea
               {...register("message")}
-              className={`w-full p-4 bg-secondary text-textPrimary rounded-card border-2 ${
+              className={`w-full p-4 bg-secondary text-textPrimary rounded-card border-2 shadow-3d-soft ${
                 errors.message ? "border-error" : "border-border"
-              } focus:outline-none focus:ring-2 focus:ring-accent shadow-subtle`}
+              } focus:outline-none focus:ring-2 focus:ring-accent`}
               placeholder="Enter your message"
               rows={5}
             />
@@ -98,7 +98,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="w-full bg-main hover:bg-primary text-white p-4 rounded-card font-semibold transition-all ease-in-out duration-300 shadow-subtle hover:shadow-deep"
+            className="w-full bg-main hover:bg-primary text-white p-4 rounded-card font-semibold transition-all ease-in-out duration-300 shadow-3d-soft hover:shadow-3d-deep"
             disabled={isSubmitting}
           >
             {isSubmitting ? "Sending..." : "Send Message"}
