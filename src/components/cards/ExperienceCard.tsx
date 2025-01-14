@@ -2,17 +2,14 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { WorkExperience } from "@/lib/definitions";
 
 const ProjectCard = ({ work }: { work: WorkExperience }) => {
-  console.log(work);
-
   return (
-    <Card className="bg-secondBackgrond flex flex-col p-4 m-9 w-5/6 card_fade_in">
+    <Card className="card flex flex-col p-4 m-9 w-5/6 card_fade_in">
       <CardHeader className="text-main flex flex-col justify-center items-center text-center">
         <CardTitle className="text-main text-4xl mb-4">
           {work?.company}
