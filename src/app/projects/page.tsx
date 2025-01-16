@@ -25,7 +25,6 @@ const ProjectsPage = () => {
         const cleanTopTechnologies = Array.from(
           new Set(topTechnologiesFound)
         ).filter((item) => item !== null);
-        console.log(cleanTopTechnologies);
 
         setTopTechnologies(cleanTopTechnologies);
       } catch (error) {
