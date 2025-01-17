@@ -1,18 +1,18 @@
-"use client";
+"use client"
 
-import React, { useRef, useState, useEffect } from "react";
-import ProjectCard from "@/components/cards/ExperienceCard";
-import { workExperience } from "@/lib/constant/projectsConstant";
-import ExperienceTimeline from "@/components/sections/ExperienceTimeline";
+import React, { useRef, useState, useEffect } from "react"
+import { workExperience } from "@/lib/constant/projectsConstant"
+import ExperienceTimeline from "./components/ExperienceTimeline"
+import ExperienceCard from "./components/ExperienceCard"
 
 const getYearFromDate = (dateString: string) => {
-  const dateParts = dateString.split(" ");
-  return dateParts[1];
-};
+  const dateParts = dateString.split(" ")
+  return dateParts[1]
+}
 
 const Page: React.FC = () => {
-  const sectionsRef = useRef<(HTMLDivElement | null)[]>([]);
-  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const sectionsRef = useRef<(HTMLDivElement | null)[]>([])
+  const [activeIndex, setActiveIndex] = useState<number>(0)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -21,36 +21,36 @@ const Page: React.FC = () => {
           if (entry.isIntersecting) {
             const index = sectionsRef.current.findIndex(
               (section) => section === entry.target
-            );
-            setActiveIndex(index);
+            )
+            setActiveIndex(index)
           }
-        });
+        })
       },
       {
         root: null, // El viewport del navegador
         threshold: 0.3, // El porcentaje de visibilidad que activa la intersección
       }
-    );
+    )
 
-    const currentSections = sectionsRef.current;
+    const currentSections = sectionsRef.current
     currentSections.forEach((section) => {
       if (section) {
-        observer.observe(section);
+        observer.observe(section)
       }
-    });
+    })
 
     return () => {
       currentSections.forEach((section) => {
         if (section) {
-          observer.unobserve(section);
+          observer.unobserve(section)
         }
-      });
-    };
-  }, []);
+      })
+    }
+  }, [])
 
   const handleScrollTo = (index: number) => {
-    sectionsRef.current[index]?.scrollIntoView({ behavior: "smooth" });
-  };
+    sectionsRef.current[index]?.scrollIntoView({ behavior: "smooth" })
+  }
 
   return (
     <section className="m-7 flex flex-col md:flex-row min-h-screen bg-background text-main px-4 py-16">
@@ -69,12 +69,12 @@ const Page: React.FC = () => {
             ref={(el) => (sectionsRef.current[index] = el)}
             className="mb-12"
           >
-            <ProjectCard work={work} />
+            <ExperienceCard work={work} />
           </div>
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page
