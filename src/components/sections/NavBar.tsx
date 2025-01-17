@@ -13,8 +13,8 @@ function NavBar() {
   };
 
   return (
-    <header className="card  w-full px-4 py-4 sticky top-0 z-20 shadow-3d-soft">
-      <nav className="flex justify-between items-center max-w-7xl mx-auto">
+    <header className="card  w-full px-4 py-2 sticky top-0 z-20 ">
+      <nav className="flex justify-between items-center max-w-6xl mx-auto">
         <Link
           href="/"
           className="text-main hover:text-primary text-lg md:text-2xl font-bold capitalize transition duration-300"
@@ -26,7 +26,11 @@ function NavBar() {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <MainButton onClick={toggleMenu}>
-            {menu ? <AiOutlineClose size={24} /> : "Menu"}
+            {menu ? (
+              <AiOutlineClose size={24} className="text-main" />
+            ) : (
+              <span className="text-main">Menu</span>
+            )}
           </MainButton>
         </div>
 
