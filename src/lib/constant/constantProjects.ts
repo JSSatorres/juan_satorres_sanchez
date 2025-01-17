@@ -1,4 +1,3 @@
-// src/lib/constant/projects.js
 export const PROJECTS = [
   {
     id: 1,
@@ -43,8 +42,7 @@ export const PROJECTS = [
     url: "https://example.com/project-six",
   },
   // Añadir más proyectos según sea necesario
-];
-
+]
 
 export const favoriteProjects = [
   {
@@ -69,4 +67,4 @@ export const favoriteProjects = [
     technologies: ["Angular", "Sass", "Firebase"],
     image_url: "https://via.placeholder.com/150", // Reemplaza con la URL de la imagen real
   },
-];
+]

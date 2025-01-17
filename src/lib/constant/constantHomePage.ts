@@ -1,14 +1,14 @@
-export const PORTFOLIO_OWNER_FIRSTNAME = "juan";
-export const PORTFOLIO_OWNER_FULLNAME = "Juan Satorres Sánchez";
+export const PORTFOLIO_OWNER_FIRSTNAME = "juan"
+export const PORTFOLIO_OWNER_FULLNAME = "Juan Satorres Sánchez"
 export const LINKEDIN_URL =
-  "https://www.linkedin.com/in/juan-s%C3%A1nchez-satorres/";
-export const GITHUB_URL = "https://github.com/JSSatorres";
+  "https://www.linkedin.com/in/juan-s%C3%A1nchez-satorres/"
+export const GITHUB_URL = "https://github.com/JSSatorres"
 
 export const RESUME_INTRODUCTION =
-  "I am a passionate Full-Stack Web Developer with a strong background in Industrial Engineering and a drive for creating efficient, scalable web applications.";
+  "I am a passionate Full-Stack Web Developer with a strong background in Industrial Engineering and a drive for creating efficient, scalable web applications."
 
 export const RESUME_INTRODUCTION_LONG =
-  "I am a passionate Full-Stack Web Developer with a solid background in industrial design. After a successful career as a technical engineer, I decided to shift my professional trajectory towards software development, specializing in building robust and scalable web applications. With expertise in technologies such as React.js, Next.js, Node.js, TypeScript, and knowledge of Python, I have worked on complex projects that seamlessly integrate frontend and backend. My focus is on optimizing processes and enhancing user experience through innovative and efficient solutions.";
+  "I am a passionate Full-Stack Web Developer with a solid background in industrial design. After a successful career as a technical engineer, I decided to shift my professional trajectory towards software development, specializing in building robust and scalable web applications. With expertise in technologies such as React.js, Next.js, Node.js, TypeScript, and knowledge of Python, I have worked on complex projects that seamlessly integrate frontend and backend. My focus is on optimizing processes and enhancing user experience through innovative and efficient solutions."
 
 export const SKILLS = [
   {
@@ -41,7 +41,7 @@ export const SKILLS = [
     description:
       "Led the development of air handling units, improving technical processes and ensuring adherence to industry standards.",
   },
-];
+]
 
 export const RESUME_EXPERIENCE = [
   {
@@ -126,7 +126,7 @@ export const RESUME_EXPERIENCE = [
       "MySQL",
     ],
   },
-];
+]
 
 //  Experience: Goblintrader (Oct 2023 -
 //   Present, Part-time, Remote): Currently developing both frontend and
