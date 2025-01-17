@@ -1,6 +1,6 @@
-import { GITHUB_URL, LINKEDIN_URL } from "@/lib/constant/constantHomePage";
-import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GITHUB_URL, LINKEDIN_URL } from "@/lib/constant/constantHomePage"
+import React from "react"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 const Footer: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

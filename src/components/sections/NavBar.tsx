@@ -1,16 +1,16 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai";
-import Link from "next/link";
-import MainButton from "../ui/MainButton";
-import { PAGES_LINK } from "@/lib/constant/headerConstant";
+import { useState } from "react"
+import { AiOutlineClose } from "react-icons/ai"
+import Link from "next/link"
+import MainButton from "../ui/MainButton"
+import { PAGES_LINK } from "@/lib/constant/headerConstant"
 
 function NavBar() {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(false)
   const toggleMenu = () => {
-    setMenu(!menu);
-  };
+    setMenu(!menu)
+  }
 
   return (
     <header className="card  w-full px-4 py-2 sticky top-0 z-20 ">
@@ -66,7 +66,7 @@ function NavBar() {
         </ul>
       </nav>
     </header>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar

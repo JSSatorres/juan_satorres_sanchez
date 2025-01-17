@@ -1,8 +1,8 @@
-import { ReactNode, MouseEventHandler } from "react";
+import { ReactNode, MouseEventHandler } from "react"
 
 interface MainButtonProps {
-  children: ReactNode;
-  onClick: MouseEventHandler<HTMLButtonElement>;
+  children: ReactNode
+  onClick: MouseEventHandler<HTMLButtonElement>
 }
 
 export default function MainButton({ children, onClick }: MainButtonProps) {
@@ -13,5 +13,5 @@ export default function MainButton({ children, onClick }: MainButtonProps) {
     >
       {children}
     </button>
-  );
+  )
 }
