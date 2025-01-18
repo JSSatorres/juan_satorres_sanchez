@@ -54,7 +54,7 @@ const Page: React.FC = () => {
 
   return (
     <section className="m-7 flex flex-col md:flex-row min-h-screen bg-background text-main px-4 py-16">
-      <div className="md:w-1/4 w-full sticky top-10">
+      <div className="md:w-1/4 w-full sticky top-15">
         <ExperienceTimeline
           activeIndex={activeIndex}
           handleScrollTo={handleScrollTo}
