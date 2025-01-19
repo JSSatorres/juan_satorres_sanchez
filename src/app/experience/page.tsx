@@ -67,7 +67,7 @@ const Page: React.FC = () => {
           <div
             key={work.company}
             ref={(el) => (sectionsRef.current[index] = el)}
-            className="mb-12"
+            className="mb-6"
           >
             <ExperienceCard work={work} />
           </div>
