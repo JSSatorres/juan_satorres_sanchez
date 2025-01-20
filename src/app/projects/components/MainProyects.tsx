@@ -1,9 +1,9 @@
-import { favoriteProjects } from "@/lib/constant/constantProjects";
+import { favoriteProjects } from "@/lib/constant/constantProjects"
 
 const MainProyects = () => {
   return (
     <section className="w-4/5 my-8">
-      <h2 className="heading-primary text-center">Favorite Projects</h2>
+      <h2 className="heading-primary text-center  mb-6">Favorite Projects</h2>
       <div className="flex flex-col gap-8">
         {favoriteProjects.map((project) => (
           <div
@@ -47,7 +47,7 @@ const MainProyects = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default MainProyects;
+export default MainProyects
