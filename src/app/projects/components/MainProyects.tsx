@@ -3,7 +3,7 @@ import { favoriteProjects } from "@/lib/constant/constantProjects"
 const MainProyects = () => {
   return (
     <section className="w-4/5 my-8">
-      <h2 className="heading-primary text-center  mb-6">Favorite Projects</h2>
+      <h2 className="text_title mb-5 mt-5 text-main">Favorite Projects</h2>
       <div className="flex flex-col gap-8">
         {favoriteProjects.map((project) => (
           <div
