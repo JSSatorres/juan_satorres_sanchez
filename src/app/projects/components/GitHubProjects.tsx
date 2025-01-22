@@ -1,11 +1,11 @@
-import { GitHubRepo } from "@/lib/definitions";
+import { GitHubRepo } from "@/lib/definitions"
 
 type GitHubProjectProps = {
-  repos: GitHubRepo[];
-  selectedTech: string;
-  topTechnologies: string[];
-  onTechChange: (tech: string) => void;
-};
+  repos: GitHubRepo[]
+  selectedTech: string
+  topTechnologies: string[]
+  onTechChange: (tech: string) => void
+}
 
 const GitHubProject = ({
   repos,
@@ -17,9 +17,7 @@ const GitHubProject = ({
     <>
       <div className="mb-8 w-full flex flex-col items-center justify-center">
         <hr className="w-full mb-5 mt-5 border-border" />
-        <h2 className="text-3xl font-bold mb-5 mt-5 text-main">
-          All Repositories
-        </h2>
+        <h2 className="text_title mb-5 mt-5 text-main">All Repositories</h2>
         <select
           className="w-full max-w-md  card text-main shadow-3d-soft hover:shadow-3d-deep border transition-all"
           value={selectedTech}
@@ -61,7 +59,7 @@ const GitHubProject = ({
         </section>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default GitHubProject;
+export default GitHubProject
