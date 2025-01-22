@@ -41,3 +41,7 @@
 .form-button:hover {
   @apply bg-accent shadow-3d-deep;
 }
+
+.text_title {
+  @apply text-3xl font-bold;
+}
