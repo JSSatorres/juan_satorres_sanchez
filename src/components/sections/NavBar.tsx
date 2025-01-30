@@ -29,7 +29,9 @@ function NavBar() {
             {menu ? (
               <AiOutlineClose size={24} className="text-main" />
             ) : (
-              <span className="text-main">Menu</span>
+              <span className="text-main text-lg md:text-2xl font-bold">
+                Menu
+              </span>
             )}
           </MainButton>
         </div>
