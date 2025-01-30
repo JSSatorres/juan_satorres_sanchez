@@ -4,9 +4,9 @@ import {
   LINKEDIN_URL,
   PORTFOLIO_OWNER_FULLNAME,
   RESUME_INTRODUCTION,
-} from "@/lib/constant/constantHomePage";
-import Image from "next/image";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+} from "@/lib/constant/constantHomePage"
+import Image from "next/image"
+import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 export default function Home() {
   return (
@@ -55,11 +55,11 @@ export default function Home() {
           <h2 className="heading-primary text-center animate-fadeIn">
             Technical Skills
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 w-full max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 w-full max-w-5xl  md:mx-5">
             {SKILLS.map((skill, index) => (
               <div
                 key={index}
-                className="card shadow-3d-soft hover:shadow-3d-deep hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="card shadow-3d-soft hover:shadow-3d-deep hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg mx-4 md:mx-0"
               >
                 <h3 className="text-xl text-main font-bold">{skill.title}</h3>
                 <p className="text-textSecondary mt-2">{skill.description}</p>
@@ -69,5 +69,5 @@ export default function Home() {
         </section>
       </main>
     </div>
-  );
+  )
 }
