@@ -1,10 +1,10 @@
-"use client";
+"use client"
 
-import React from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { contactSchema } from "./validationSchema";
-import { FormInput } from "@/lib/definitions";
+import React from "react"
+import { useForm, SubmitHandler } from "react-hook-form"
+import { yupResolver } from "@hookform/resolvers/yup"
+import { contactSchema } from "./validationSchema"
+import { FormInput } from "@/lib/definitions"
 
 const Contact = () => {
   const {
@@ -14,7 +14,7 @@ const Contact = () => {
     reset,
   } = useForm<FormInput>({
     resolver: yupResolver(contactSchema),
-  });
+  })
 
   const onSubmit: SubmitHandler<FormInput> = async (data) => {
     try {
@@ -24,21 +24,21 @@ const Contact = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
-      });
+      })
 
       if (res.ok) {
-        reset();
+        reset()
       } else {
-        console.error("Failed to send");
+        console.error("Failed to send")
       }
     } catch (err) {
-      console.error("Error:", err);
+      console.error("Error:", err)
     }
-  };
+  }
 
   return (
     <main className="bg-background text-textPrimary px-4 py-16 overflow-x-hidden">
-      <div className="max-w-2xl mx-auto bg-card p-8 rounded-card shadow-3d-deep mt-5">
+      <div className="max-w-2xl mx-auto card">
         <h1 className="text-3xl font-bold mb-6 text-center text-main">
           Contact Me
         </h1>
@@ -106,7 +106,7 @@ const Contact = () => {
         </form>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
