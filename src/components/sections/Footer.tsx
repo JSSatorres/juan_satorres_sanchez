@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-secondBackgrond text-main py-4">
+    <footer className="bg-secondBackgrond text-main py-4 mt-20">
       <div className="max-w-7xl mx-auto px-4 flex flex-col items-center">
         <p className="text-center mb-2">
           &copy; {new Date().getFullYear()} Juan Satorres Sánchez
