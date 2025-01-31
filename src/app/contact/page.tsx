@@ -42,7 +42,10 @@ const Contact = () => {
         <h1 className="text-3xl font-bold mb-6 text-center text-main">
           Contact Me
         </h1>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="space-y-6 mt-0 md:mt-20"
+        >
           <div>
             <label className="block text-sm font-medium text-textPrimary mb-1">
               Name
