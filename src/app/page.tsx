@@ -28,7 +28,9 @@ export default function Home() {
               <span className="text-primary">I’m</span>
               <span className="text-main"> {PORTFOLIO_OWNER_FULLNAME}</span>
             </h1>
-            <p className="mt-4 text-textSecondary">{RESUME_INTRODUCTION}</p>
+            <p className="mt-4 mx-4 md:mx-0 text-textSecondary">
+              {RESUME_INTRODUCTION}
+            </p>
 
             <div className="mt-6 flex space-x-4 justify-center">
               <a
