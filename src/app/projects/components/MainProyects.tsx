@@ -1,9 +1,11 @@
 import { favoriteProjects } from "@/lib/constant/constantProjects"
 
-const MainProyects = () => {
+const MainProjects = () => {
   return (
-    <section className="w-4/5 my-8">
-      <h2 className="text_title mb-5 mt-5 text-main">Favorite Projects</h2>
+    <section className="w-full md:w-4/5  mx-auto">
+      <h2 className="text_title mb-10 md:my-10 text-main text-center">
+        Favorite Projects
+      </h2>
       <div className="flex flex-col gap-8">
         {favoriteProjects.map((project) => (
           <div
@@ -25,6 +27,13 @@ const MainProyects = () => {
             <p className="mt-2 text-textSecondary">
               <strong>Technologies:</strong> {project.technologies.join(", ")}
             </p>
+            {project.highlights && (
+              <ul className="mt-3 list-disc list-inside text-sm text-gray-600">
+                {project.highlights.map((highlight, index) => (
+                  <li key={index}>{highlight}</li>
+                ))}
+              </ul>
+            )}
             <div className="mt-4 flex gap-4">
               <a
                 href={project.html_url}
@@ -50,4 +59,4 @@ const MainProyects = () => {
   )
 }
 
-export default MainProyects
+export default MainProjects
