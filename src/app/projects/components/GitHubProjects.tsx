@@ -14,27 +14,29 @@ const GitHubProject = ({
   onTechChange,
 }: GitHubProjectProps) => {
   return (
-    <>
+    <section>
       <div className="mb-8 w-full flex flex-col items-center justify-center">
         <hr className="w-full mb-5 mt-5 border-border" />
         <h2 className="text_title mb-5 mt-5 text-main">All Repositories</h2>
-        <select
-          className="w-full max-w-md  card text-main shadow-3d-soft hover:shadow-3d-deep border transition-all"
-          value={selectedTech}
-          onChange={(e) => onTechChange(e.target.value)}
-        >
-          <option value="">All Technologies</option>
-          {topTechnologies.map((tech) => (
-            <option key={tech} value={tech}>
-              {tech}
-            </option>
-          ))}
-        </select>
+        <div className="relative w-full">
+          <select
+            className="w-full md:max-w-md  card"
+            value={selectedTech}
+            onChange={(e) => onTechChange(e.target.value)}
+          >
+            <option value="">All Technologies</option>
+            {topTechnologies.map((tech) => (
+              <option key={tech} value={tech} className="bg-yellow text-main">
+                {tech}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       <div className="flex flex-col items-center justify-center text-center">
         <section className="flex flex-col items-center justify-center text-center">
-          <div className="w-4/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+          <div className="w-full md:w-4/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
             {repos.map((repo) => (
               <div key={repo.id} className="flex flex-col justify-between card">
                 <h3 className="text-xl font-bold text-main">{repo.name}</h3>
@@ -58,7 +60,7 @@ const GitHubProject = ({
           </div>
         </section>
       </div>
-    </>
+    </section>
   )
 }
 
