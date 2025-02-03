@@ -18,9 +18,9 @@ const GitHubProject = ({
       <div className="mb-8 w-full flex flex-col items-center justify-center">
         <hr className="w-full mb-5 mt-5 border-border" />
         <h2 className="text_title mb-5 mt-5 text-main">All Repositories</h2>
-        <div className="relative w-full">
+        <div className=" w-full md:flex md:justify-center">
           <select
-            className="w-full md:max-w-md  card"
+            className="w-full md:max-w-md card"
             value={selectedTech}
             onChange={(e) => onTechChange(e.target.value)}
           >
