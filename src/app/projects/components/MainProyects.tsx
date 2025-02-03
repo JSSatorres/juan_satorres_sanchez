@@ -17,24 +17,32 @@ const MainProjects = () => {
               alt={project.name}
               className="w-full h-40 object-cover rounded-t-card"
             />
-            <h3 className="text-xl font-semibold mt-4 text-main">
+            <h3 className="text-xl font-semibold mt-4 text-main md:text-center">
               {project.name}
             </h3>
-            <p className="text-textSecondary mt-2">{project.description}</p>
-            <p className="text-sm text-gray-500 mt-1">
-              <strong>Language:</strong> {project.language || "Not specified"}
-            </p>
-            <p className="mt-2 text-textSecondary">
-              <strong>Technologies:</strong> {project.technologies.join(", ")}
-            </p>
-            {project.highlights && (
-              <ul className="mt-3 list-disc list-inside text-sm text-gray-600">
-                {project.highlights.map((highlight, index) => (
-                  <li key={index}>{highlight}</li>
-                ))}
-              </ul>
-            )}
-            <div className="mt-4 flex gap-4">
+            <div className="md:flex md:justify-between md:items-center">
+              <div>
+                <p className="text-textSecondary mt-2">{project.description}</p>
+                <p className="text-sm text-gray-500 mt-1">
+                  <strong>Language:</strong>{" "}
+                  {project.language || "Not specified"}
+                </p>
+                <p className="mt-2 text-textSecondary">
+                  <strong>Technologies:</strong>{" "}
+                  {project.technologies.join(", ")}
+                </p>
+              </div>
+              <div>
+                {project.highlights && (
+                  <ul className="mt-3 list-disc list-inside text-sm text-gray-600">
+                    {project.highlights.map((highlight, index) => (
+                      <li key={index}>{highlight}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+            <div className="mt-4 flex gap-4 md:justify-center">
               <a
                 href={project.html_url}
                 target="_blank"
