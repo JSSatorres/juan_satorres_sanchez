@@ -53,27 +53,26 @@ const Page: React.FC = () => {
   }
 
   return (
-    <section className="m-7 flex flex-col md:flex-row min-h-screen bg-background text-main px-4 py-16">
-      <div className="md:w-1/4 w-full sticky top-20 z-20">
+    <main className="md:m-7 flex flex-col md:flex-row min-h-screen bg-background text-main px-4 ">
+      <section className="md:w-1/4 w-full sticky top-24 z-20">
         <ExperienceTimeline
           activeIndex={activeIndex}
           handleScrollTo={handleScrollTo}
           getYearFromDate={getYearFromDate}
         />
-      </div>
+      </section>
 
-      <div className="flex flex-col justify-center items-center md:w-3/4">
+      <section className="flex flex-col justify-center items-center w-full">
         {workExperience.map((work, index) => (
           <div
             key={work.company}
             ref={(el) => (sectionsRef.current[index] = el)}
-            className="mb-6"
           >
             <ExperienceCard work={work} />
           </div>
         ))}
-      </div>
-    </section>
+      </section>
+    </main>
   )
 }
 
