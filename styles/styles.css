@@ -45,3 +45,23 @@
 .text_title {
   @apply text-3xl font-bold;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    scale: 10%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.card_fade_in {
+  view-timeline-name: --reveal;
+
+  animation-name: fadeIn;
+  animation-fill-mode: both;
+
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 75%;
+}
