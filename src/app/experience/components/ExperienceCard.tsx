@@ -9,7 +9,7 @@ import { WorkExperience } from "@/lib/definitions"
 
 const ExperienceCard = ({ work }: { work: WorkExperience }) => {
   return (
-    <Card className="card flex flex-col p-4 m-9 w-5/6 card_fade_in">
+    <Card className="card flex flex-col  card_fade_in">
       <CardHeader className="text-main flex flex-col justify-center items-center text-center">
         <CardTitle className="text-main text-4xl mb-4">
           {work?.company}
@@ -42,7 +42,7 @@ const ExperienceCard = ({ work }: { work: WorkExperience }) => {
           <CardDescription className="mb-2">
             <strong>Achievements:</strong> {project.achievements}
           </CardDescription>
-          {project.image && (
+          {project?.image && (
             <div className="flex justify-center mt-4">
               <img
                 src={project.image}
