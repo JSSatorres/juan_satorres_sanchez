@@ -28,7 +28,7 @@ const Page: React.FC = () => {
       },
       {
         root: null, // El viewport del navegador
-        threshold: 0.3, // El porcentaje de visibilidad que activa la intersección
+        threshold: 1, // El porcentaje de visibilidad que activa la intersección
       }
     )
 

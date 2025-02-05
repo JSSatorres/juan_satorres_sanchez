@@ -1,13 +1,13 @@
 import React from "react"
 import { workExperience } from "@/lib/constant/projectsConstant"
 
-interface YearTimelineProps {
+interface ExperienceTimeline {
   activeIndex: number
   handleScrollTo: (index: number) => void
   getYearFromDate: (dateString: string) => string
 }
 
-const ExperienceTimeline: React.FC<YearTimelineProps> = ({
+const ExperienceTimeline: React.FC<ExperienceTimeline> = ({
   activeIndex,
   handleScrollTo,
   getYearFromDate,

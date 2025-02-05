@@ -9,7 +9,7 @@ import { WorkExperience } from "@/lib/definitions"
 
 const ExperienceCard = ({ work }: { work: WorkExperience }) => {
   return (
-    <Card className="card flex flex-col  card_fade_in">
+    <Card className="card mb-10 flex flex-col  card_fade_in">
       <CardHeader className="text-main flex flex-col justify-center items-center text-center">
         <CardTitle className="text-main text-4xl mb-4">
           {work?.company}
