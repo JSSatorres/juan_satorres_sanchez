@@ -13,7 +13,7 @@ function NavBar() {
   }
 
   return (
-    <header className="card  w-full px-4 py-2 sticky top-0 z-20 ">
+    <header className="card  w-full px-4 py-2 sticky top-0 z-30 ">
       <nav className="flex justify-between items-center max-w-6xl mx-auto">
         <Link
           href="/"
@@ -29,7 +29,7 @@ function NavBar() {
             {menu ? (
               <AiOutlineClose size={24} className="text-main" />
             ) : (
-              <span className="text-main text-lg md:text-2xl font-bold">
+              <span className="text-main text-lg md:text-2xl font-bold z-30">
                 Menu
               </span>
             )}
@@ -38,7 +38,7 @@ function NavBar() {
 
         {menu && (
           <div className="absolute top-16 left-0 right-0 card">
-            <ul className="flex flex-col items-center space-y-4">
+            <ul className="flex flex-col items-center space-y-4 z-30">
               {PAGES_LINK.map((item) => (
                 <li key={item.href}>
                   <Link
