@@ -49,7 +49,10 @@ const Page: React.FC = () => {
   }, [])
 
   const handleScrollTo = (index: number) => {
-    sectionsRef.current[index]?.scrollIntoView({ behavior: "smooth" })
+    sectionsRef.current[index]?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+    })
   }
 
   return (
@@ -67,6 +70,7 @@ const Page: React.FC = () => {
           <div
             key={work.company}
             ref={(el) => (sectionsRef.current[index] = el)}
+            className="scroll-mt-48 md:scroll-mt-24"
           >
             <ExperienceCard work={work} />
           </div>
