@@ -100,15 +100,7 @@ export const RESUME_EXPERIENCE = [
     duration: "Apr 2018 - Sep 2021",
     jobDescription:
       "Led the design and development of air handling units. Managed product design phases, ensuring quality control and adherence to technical specifications. Oversaw production supervision and delivery processes.",
-    mainTechnologies: [
-      "Next.js",
-      "Redux",
-      "MaterialUI",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "MySQL",
-    ],
+    mainTechnologies: ["VisualBasic", "Excel", "SolidWorks", "AutoCAD"],
   },
   {
     jobTitle: "Product Development",
@@ -116,15 +108,7 @@ export const RESUME_EXPERIENCE = [
     duration: "Mar 2017 - Apr 2018",
     jobDescription:
       "Engaged in product development and engineering projects, optimizing performance and enhancing technical processes. Contributed to improving product functionality and efficiency.",
-    mainTechnologies: [
-      "Next.js",
-      "Redux",
-      "MaterialUI",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "MySQL",
-    ],
+    mainTechnologies: ["VisualBasic", "Excel", "SolidWorks", "AutoCAD"],
   },
 ]
 
