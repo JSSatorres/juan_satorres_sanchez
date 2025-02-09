@@ -54,4 +54,21 @@ export const favoriteProjects = [
       "Optimized interface with SCSS",
     ],
   },
+  {
+    id: 3,
+    name: "Tutorial SolidWorks",
+    full_name: "www.tutorialsolidworks.es",
+    html_url: "https://www.tutorialsolidworks.es",
+    language: "WordPress",
+    description:
+      "An e-learning website for SolidWorks tutorials built with WordPress using Elementor and various plugins.",
+    technologies: ["WordPress", "Elementor", "Plugins"],
+    image_url: "/images/tutorialsolidworks.png",
+    highlights: [
+      "Built with WordPress for easy content management",
+      "Uses Elementor for custom page building without coding",
+      "Various plugins for enhanced functionality",
+      "Supports payments with Stripe and PayPal",
+    ],
+  },
 ]
