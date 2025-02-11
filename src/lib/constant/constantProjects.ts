@@ -58,7 +58,8 @@ export const favoriteProjects = [
     id: 3,
     name: "Tutorial SolidWorks",
     full_name: "www.tutorialsolidworks.es",
-    html_url: "https://www.tutorialsolidworks.es",
+    html_url: null,
+    demo_url: "https://www.tutorialsolidworks.es",
     language: "WordPress",
     description:
       "An e-learning website for SolidWorks tutorials built with WordPress using Elementor and various plugins.",
