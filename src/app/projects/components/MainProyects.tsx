@@ -12,14 +12,15 @@ const MainProjects = () => {
             key={project.id}
             className="card hover:card-hover flex flex-col justify-between"
           >
+            <h3 className="text_title font-semibold my-6 text-main md:text-center ">
+              {project.name}
+            </h3>
             <img
               src={project.image_url}
               alt={project.name}
-              className="w-full h-40 object-cover rounded-t-card"
+              className="w-full object-cover rounded-t-card  md:h-60 md:object-top mb-6"
             />
-            <h3 className="text-xl font-semibold mt-4 text-main md:text-center">
-              {project.name}
-            </h3>
+
             <div className="md:flex md:justify-between md:items-center">
               <div>
                 <p className="text-textSecondary mt-2">{project.description}</p>
@@ -43,14 +44,16 @@ const MainProjects = () => {
               </div>
             </div>
             <div className="mt-4 flex gap-4 md:justify-center">
-              <a
-                href={project.html_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                View on GitHub
-              </a>
+              {project?.html_url && (
+                <a
+                  href={project.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  View on GitHub
+                </a>
+              )}
               <a
                 href={project.demo_url}
                 target="_blank"
