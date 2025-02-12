@@ -13,10 +13,13 @@ const getYearFromDate = (dateString: string) => {
 const Page: React.FC = () => {
   const sectionsRef = useRef<(HTMLDivElement | null)[]>([])
   const [activeIndex, setActiveIndex] = useState<number>(0)
+  const [isScrolling, setIsScrolling] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
+        if (isScrolling) return
+
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = sectionsRef.current.findIndex(
@@ -28,7 +31,8 @@ const Page: React.FC = () => {
       },
       {
         root: null, // El viewport del navegador
-        threshold: 1, // El porcentaje de visibilidad que activa la intersección
+        threshold: 0.5, // El porcentaje de visibilidad que activa la intersección
+        rootMargin: "0px 0px -20% 0px",
       }
     )
 
@@ -46,13 +50,19 @@ const Page: React.FC = () => {
         }
       })
     }
-  }, [])
+  }, [isScrolling])
 
   const handleScrollTo = (index: number) => {
+    setIsScrolling(true)
     sectionsRef.current[index]?.scrollIntoView({
       behavior: "smooth",
-      block: "nearest",
+      block: "start",
     })
+
+    setTimeout(() => {
+      setActiveIndex(index)
+      setIsScrolling(false)
+    }, 300)
   }
 
   return (
@@ -70,7 +80,7 @@ const Page: React.FC = () => {
           <div
             key={work.company}
             ref={(el) => (sectionsRef.current[index] = el)}
-            className="scroll-mt-48 md:scroll-mt-24"
+            className="scroll-mt-48 md:scroll-mt-24 first:mt-8 md:first:mt-0"
           >
             <ExperienceCard work={work} />
           </div>
