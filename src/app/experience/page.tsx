@@ -66,16 +66,16 @@ const Page: React.FC = () => {
   }
 
   return (
-    <main className="md:m-7 flex flex-col md:flex-row min-h-screen bg-background text-main px-4 ">
-      <section className="md:w-1/4 w-full sticky top-24 z-20">
+    <>
+      <article className="md:w-1/4 w-full sticky top-24 z-20">
         <ExperienceTimeline
           activeIndex={activeIndex}
           handleScrollTo={handleScrollTo}
           getYearFromDate={getYearFromDate}
         />
-      </section>
+      </article>
 
-      <section className="flex flex-col justify-center items-center w-full">
+      <article className="flex flex-col justify-center items-center w-full">
         {workExperience.map((work, index) => (
           <div
             key={work.company}
@@ -88,8 +88,8 @@ const Page: React.FC = () => {
             <ExperienceCard work={work} />
           </div>
         ))}
-      </section>
-    </main>
+      </article>
+    </>
   )
 }
 
