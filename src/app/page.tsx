@@ -11,8 +11,8 @@ import { FaLinkedin, FaGithub } from "react-icons/fa"
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-textPrimary flex flex-col items-center">
-      <main className="container py-16">
-        <section className="flex flex-col items-center justify-center text-center">
+      <section className="container py-16">
+        <article className="flex flex-col items-center justify-center text-center">
           <div className="flex justify-center mb-8">
             <Image
               src="/images/profile-image.png"
@@ -51,9 +51,9 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </section>
+        </article>
 
-        <section className="mt-16 flex flex-col items-center">
+        <article className="mt-16 flex flex-col items-center">
           <h2 className="heading-primary text-center animate-fadeIn">
             Technical Skills
           </h2>
@@ -68,8 +68,8 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </section>
-      </main>
+        </article>
+      </section>
     </div>
   )
 }
