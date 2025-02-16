@@ -19,7 +19,7 @@ const ExperienceTimeline: React.FC<ExperienceTimeline> = ({
           <li
             key={index}
             className={`cursor-pointer text-xl font-bold transition duration-200 text-main relative flex md:flex-row flex-col items-center mx-1`}
-            onClick={() => handleScrollTo(index)}
+            onClick={() => handleScrollTo(index as number)}
           >
             <div className="relative flex items-center">
               <span
@@ -30,7 +30,7 @@ const ExperienceTimeline: React.FC<ExperienceTimeline> = ({
                 } hover:bg-opacity-75`}
               ></span>
               <span className="text-sm ml-1 md:ml-2">
-                {getYearFromDate(work?.duration)}
+                {getYearFromDate(work?.duration as string)}
               </span>
             </div>
 

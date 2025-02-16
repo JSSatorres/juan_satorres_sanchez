@@ -5,15 +5,16 @@ import { workExperience } from "@/lib/constant/projectsConstant"
 import ExperienceTimeline from "./components/ExperienceTimeline"
 import ExperienceCard from "./components/ExperienceCard"
 
-const getYearFromDate = (dateString: string) => {
-  const dateParts = dateString.split(" ")
-  return dateParts[1]
-}
-
 const Page: React.FC = () => {
   const sectionsRef = useRef<(HTMLDivElement | null)[]>([])
   const [activeIndex, setActiveIndex] = useState<number>(0)
   const [isScrolling, setIsScrolling] = useState(false)
+
+  const getYearFromDate = (dateString: string) => {
+    if (!dateString) return ""
+    const dateParts = dateString.split(" ")
+    return dateParts[1]
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -30,8 +31,8 @@ const Page: React.FC = () => {
         })
       },
       {
-        root: null, // El viewport del navegador
-        threshold: 0.6, // El porcentaje de visibilidad que activa la intersección
+        root: null,
+        threshold: 0.6,
         rootMargin: "-10% 0px -30% 0px",
       }
     )
