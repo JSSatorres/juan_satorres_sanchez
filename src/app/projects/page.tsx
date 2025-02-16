@@ -40,7 +40,7 @@ const ProjectsPage = () => {
   )
 
   return (
-    <main className="min-h-screen bg-background text-main px-8 py-16 flex flex-col items-center">
+    <>
       <MainProyects />
       <GitHubProject
         repos={filteredRepos}
@@ -48,7 +48,7 @@ const ProjectsPage = () => {
         topTechnologies={topTechnologies}
         onTechChange={(tech) => setSelectedTech(tech)}
       />
-    </main>
+    </>
   )
 }
 
