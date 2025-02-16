@@ -37,7 +37,7 @@ const Contact = () => {
   }
 
   return (
-    <main className="bg-background text-textPrimary px-4 py-16 overflow-x-hidden">
+    <>
       <div className="max-w-2xl mx-auto card">
         <h1 className="text-3xl font-bold mb-6 text-center text-main">
           Contact Me
@@ -108,7 +108,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </main>
+    </>
   )
 }
 
