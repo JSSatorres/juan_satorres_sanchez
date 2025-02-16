@@ -67,7 +67,7 @@ const Page: React.FC = () => {
 
   return (
     <>
-      <article className="md:w-1/4 w-full sticky top-24 z-20">
+      <article className="md:w-1/6 w-full sticky top-24 z-20 px-0 md:px-4 md:flex md:justify-center">
         <ExperienceTimeline
           activeIndex={activeIndex}
           handleScrollTo={handleScrollTo}
@@ -75,15 +75,16 @@ const Page: React.FC = () => {
         />
       </article>
 
-      <article className="flex flex-col justify-center items-center w-full">
+      <article className="flex flex-col justify-center items-center w-full px-0 md:px-4">
         {workExperience.map((work, index) => (
           <div
             key={work.company}
             ref={(el) => (sectionsRef.current[index] = el)}
-            className={`scroll-mt-48 md:scroll-mt-24 last:mb-32 md:last:mb-0 relative ${
-              index < 4 ? "translate-y-50" : ""
-            }  ${index > 0 && index < 4 ? "translate-y-32" : ""}
-            ${index === 3 ? "mb-40" : ""}`}
+            className={`scroll-mt-48 md:scroll-mt-24 last:mb-32 md:last:mb-0 relative 
+              ${index === 0 && "mt-8 md:mt-0"}
+              ${index < 4 && "translate-y-50"} 
+              ${index > 0 && index < 4 && "translate-y-32"}
+              ${index === 3 && "mb-40"}`}
           >
             <ExperienceCard work={work} />
           </div>

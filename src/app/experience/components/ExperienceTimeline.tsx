@@ -14,7 +14,7 @@ const ExperienceTimeline: React.FC<ExperienceTimeline> = ({
 }) => {
   return (
     <div className="md:fixed md:top-22 bg-secondBackgrond  flex md:flex-col flex-row md:items-center items-center justify-center card">
-      <ul className="flex md:flex-col flex-row items-center  md:space-y-8  md:space-x-0  ">
+      <ul className="flex md:flex-col flex-row items-center md:space-y-8  md:space-x-0  ">
         {workExperience.map((work, index) => (
           <li
             key={index}
